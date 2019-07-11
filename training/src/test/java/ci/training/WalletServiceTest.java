@@ -25,7 +25,7 @@ public class WalletServiceTest {
 	@Before
 	public void init(){
 		
-		MockitoAnnotations.initMocks(this);
+		MockitoAnnotations.initMocks(this); // used to create and configure a mock class of repo
 		service = new WalletServiceImpl(repo);
 	}
 	@Test
