@@ -8,7 +8,6 @@ public class Wallet {
 
 	public Wallet() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Wallet(BigDecimal balance) {
@@ -44,8 +43,9 @@ public class Wallet {
 		if (balance == null) {
 			if (other.balance != null)
 				return false;
-		} else if (!balance.equals(other.balance))
+		} else if (!balance.equals(other.balance)) {
 			return false;
+		}
 		return true;
 	}
 

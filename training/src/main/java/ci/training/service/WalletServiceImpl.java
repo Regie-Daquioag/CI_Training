@@ -38,7 +38,6 @@ public class WalletServiceImpl implements WalletService{
 	}
 
 	public Customer withdraw(String phone, BigDecimal amount) {
-		// TODO Auto-generated method stub
 		Customer c = repo.find(phone);
 		if(c == null){
 			return null;
@@ -50,9 +49,7 @@ public class WalletServiceImpl implements WalletService{
 		return c;
 	}
 
-	public Customer deposit(String phone, BigDecimal amount) {
-		// TODO Auto-generated method stub
-		
+	public Customer deposit(String phone, BigDecimal amount) {		
 		if(amount.doubleValue()<=0){
 			
 			throw new IllegalArgumentException();
@@ -66,7 +63,6 @@ public class WalletServiceImpl implements WalletService{
 	}
 
 	public Customer fundTransfer(String fromPhone, String toPhone, BigDecimal amount) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 	

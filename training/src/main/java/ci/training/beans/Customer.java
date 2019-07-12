@@ -7,7 +7,6 @@ public class Customer {
 	private Wallet wallet;
 	public Customer() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Customer(String name, String phoneNumber, Wallet wallet) {
 		super();
@@ -44,28 +43,35 @@ public class Customer {
 	}
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+		if (this == obj) {
 			return true;
-		if (obj == null)
+		}
+		if (obj == null) {
 			return false;
-		if (getClass() != obj.getClass())
+		}
+		if (getClass() != obj.getClass()) {
 			return false;
+		}
 		Customer other = (Customer) obj;
 		if (name == null) {
-			if (other.name != null)
+			if (other.name != null) {
 				return false;
-		} else if (!name.equals(other.name))
+			}
+		} else if (!name.equals(other.name)) {
 			return false;
+		}
 		if (phoneNumber == null) {
 			if (other.phoneNumber != null)
 				return false;
-		} else if (!phoneNumber.equals(other.phoneNumber))
+		} else if (!phoneNumber.equals(other.phoneNumber)) {
 			return false;
+		}
 		if (wallet == null) {
 			if (other.wallet != null)
 				return false;
-		} else if (!wallet.equals(other.wallet))
+		} else if (!wallet.equals(other.wallet)) {
 			return false;
+		}
 		return true;
 	}
 	@Override
