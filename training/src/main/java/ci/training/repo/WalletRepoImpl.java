@@ -8,10 +8,6 @@ import ci.training.beans.Customer;
 public class WalletRepoImpl implements WalletRepo {
 	private Map<String, Customer> customers;
 	
-	public WalletRepoImpl() {
-		super();
-	}
-	
 	public WalletRepoImpl(HashMap<String, Customer> customers) {
 		super();
 		this.customers = customers;
