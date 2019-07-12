@@ -15,14 +15,13 @@ import cucumber.api.java.en.When;
 
 public class WalletStepDef {
 	private WalletServiceImpl service;
-	private WalletRepoImpl repo;
 	
 	private Customer cust;
 	private Customer res;
 	
 	@Given("I want to create an account") 
 	public void createAccountSetUp() {
-		repo = new WalletRepoImpl(new HashMap<String, Customer>());
+		WalletRepoImpl repo = new WalletRepoImpl(new HashMap<String, Customer>());
 		service = new WalletServiceImpl(repo);
 		cust = new Customer();
 	}

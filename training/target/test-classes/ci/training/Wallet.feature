@@ -24,4 +24,3 @@ Feature: Wallet
 		Then I should get an account with "Regie" "8315952000" and 2000
 		
 		
-		
